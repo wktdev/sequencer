@@ -28,12 +28,11 @@ $(function() {
     //_________________________________________________________END Track que arrays
 
 
-
     //_________________________________________________________Track arrays
-    var track1 = [1, 3],
-        track2 = [5, 13],
-        track3 = [1],
-        track4 = [1, 3, 5, 7, 9, 11, 13, 15];
+    var track1 = [],
+        track2 = [],
+        track3 = [],
+        track4 = [];
 
     //_________________________________________________________END Track arrays
 
@@ -88,6 +87,9 @@ $(function() {
 
 
 
+
+
+
     };
     //_________________________________________________________ END CheckRecordAndPlay
 
@@ -97,6 +99,8 @@ $(function() {
         $("#metro-ui-" + (beatDivisionNumber)).effect("pulsate", {
             times: 1
         }, 10);
+
+
 
         checkIfRecordedAndPlay(track1, kick, beatDivisionNumber, time);
         checkIfRecordedAndPlay(track2, snare, beatDivisionNumber, time);
