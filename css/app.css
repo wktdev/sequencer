@@ -1,0 +1,73 @@
+body{
+background-color:purple
+}
+
+
+.app{
+  width:1000px;
+}
+
+
+
+
+.grid{
+  width:50px;
+  height:50px;
+  background-color:grey
+}
+
+.tracks{
+  position:relative;
+  left:100px;
+}
+
+
+
+
+
+.grid-track0{
+  display:inline-block;
+}
+
+.grid-track1{
+  display:inline-block;
+}
+
+.grid-track2{
+  display:inline-block;
+}
+
+.grid-track3{
+  display:inline-block;
+}
+
+.grid-track4{
+  display:inline-block;
+}
+
+
+
+
+.drum-pad-container{
+  position:relative;
+  top:100px;
+  left:20%;
+}
+
+.track-name{
+  float:left;
+}
+
+.drumPad{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 1em;
+  background-color:orange;
+
+}
+
+#play-button{
+
+  background-color:green;
+}

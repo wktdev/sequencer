@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/hot-sneaks/jquery-ui.css" type="text/css"> 
+                <link rel="stylesheet" href="css/app.css" type="text/css"> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+          <script type="text/javascript" src="js/audiocontext_check.js" charset="utf-8"></script>
+           <script type="text/javascript" src="js/audiolib.js" charset="utf-8"></script>
+            <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
+
+
+    </head>
+
+    <body>
+
+
+
+<div class="app">
+
+
+
+<div class="tracks">
+<div class="track-names">Metronome</div>
+<div id="track-0-container">
+<div class = "grid grid-track0" id="metro-ui-1"></div>
+<div class = "grid grid-track0" id="metro-ui-2"></div>
+<div class = "grid grid-track0" id="metro-ui-3"></div>
+<div class = "grid grid-track0" id="metro-ui-4"></div>
+<div class = "grid grid-track0" id="metro-ui-5"></div>
+<div class = "grid grid-track0" id="metro-ui-6"></div>
+<div class = "grid grid-track0" id="metro-ui-7"></div>
+<div class = "grid grid-track0" id="metro-ui-8"></div>
+<div class = "grid grid-track0" id="metro-ui-9"></div>
+<div class = "grid grid-track0" id="metro-ui-10"></div>
+<div class = "grid grid-track0" id="metro-ui-11"></div>
+<div class = "grid grid-track0" id="metro-ui-12"></div>
+<div class = "grid grid-track0" id="metro-ui-13"></div>
+<div class = "grid grid-track0" id="metro-ui-14"></div>
+<div class = "grid grid-track0" id="metro-ui-15"></div>
+<div class = "grid grid-track0" id="metro-ui-16"></div>
+</div>
+<div class="track-names">Kick</div>
+<div id="track-1-container">
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth1"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth2"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth3"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth4"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth5"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth6"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth7"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth8"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth9"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth10"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth11"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth12"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth13"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth14"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth15"></div>
+<div class = "grid grid-track1" id="gridBeatTrack1-Rhyth16"></div>
+</div>
+<div class="track-names">Snare</div>
+<div id="track-2-container">
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth1"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth2"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth3"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth4"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth5"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth6"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth7"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth8"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth9"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth10"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth11"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth12"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth13"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth14"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth15"></div>
+<div class = "grid grid-track2" id="gridBeatTrack2-Rhyth16"></div>
+</div>
+<div class="track-names">HiHat</div>
+<div id="track-3-container">
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth1"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth2"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth3"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth4"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth5"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth6"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth7"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth8"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth9"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth10"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth11"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth12"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth13"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth14"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth15"></div>
+<div class = "grid grid-track3" id="gridBeatTrack3-Rhyth16"></div>
+</div>
+
+<div class="track-names">Shaker</div>
+<div id="track-4-container">
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth1"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth2"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth3"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth4"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth5"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth6"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth7"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth8"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth9"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth10"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth11"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth12"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth13"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth14"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth15"></div>
+<div class = "grid grid-track4" id="gridBeatTrack4-Rhyth16"></div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="drum-pad-container"><!--___________________________Drum-pads__-->
+      <div id="tempoBox">Tempo: <span id="showTempo">120</span>BPM <input id="tempo" type="range" min="30.0" max="160.0" step="1" value="120" style="height: 20px; width: 200px" ></div>
+   
+
+<div class="drumPad" id="drumpad-track1">Kick</div>
+<div class="drumPad" id="drumpad-track2">Snare</div>
+<div class="drumPad" id="drumpad-track3">Hi-hat</div>
+<div class="drumPad" id="drumpad-track4">Shaker</div>
+<!--____________________________________________-->
+<div class="drumPad" id="play-button">Play/Stop</div> <!--_____Play button-->
+</div>
+
+
+
+
+
+
+
+</div>
+
+    </body>
+
+    </html>
