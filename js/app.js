@@ -1,4 +1,5 @@
 $(function() {
+    "use strict"
 
     //_________________________________________________________General variable declarations
     var isPlaying = false,
@@ -58,7 +59,7 @@ $(function() {
 
     function setDemoDivColors(domElementGridNote, arr) {
 
-        for (i = 0; i < arr.length; i += 1) {
+        for (var i = 0; i < arr.length; i += 1) {
             $(domElementGridNote + arr[i]).css("background-color", "yellow");
 
         }
@@ -77,7 +78,7 @@ $(function() {
 
     function checkIfRecordedAndPlay(trackArray, sndToPlay, gridBeat, timeVal) {
 
-        for (i = 0; i < trackArray.length; i += 1) {
+        for (var i = 0; i < trackArray.length; i += 1) {
 
             if (gridBeat === trackArray[i]) {
                 sndToPlay.play(timeVal)
@@ -125,10 +126,10 @@ $(function() {
         track4.push(track4Que[0]);
         track4Que[0] = undefined;
 
-        /* var osc = audioContext.createOscillator(); // Oscillator 
-        osc.connect(audioContext.destination)
-        osc.start(time)
-        osc.stop(time + 0.1)*/
+        // var osc = audioContext.createOscillator(); // Oscillator 
+        // osc.connect(audioContext.destination)
+        // osc.start(time)
+        // osc.stop(time + 0.1)
 
     }
 
@@ -226,9 +227,9 @@ $(function() {
 
     function removeDuplicates(arr) {
 
-        for (i = 0; i < arr.length - 1; i += 1) {
+        for (var i = 0; i < arr.length - 1; i += 1) {
 
-            for (j = i + 1; j < arr.length; j += 1)
+            for (var j = i + 1; j < arr.length; j += 1)
 
                 if (arr[i] === arr[j]) {
                 arr.splice(i, 1);
