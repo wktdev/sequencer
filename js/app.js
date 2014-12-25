@@ -86,19 +86,7 @@ $(function() {
             }
         }
 
-        console.log(track1Que)
 
-        track1.push(track1Que[0])
-        track1Que[0] = undefined
-
-        track2.push(track2Que[0])
-        track2Que[0] = undefined
-
-        track3.push(track3Que[0])
-        track3Que[0] = undefined
-
-        track4.push(track4Que[0])
-        track4Que[0] = undefined
 
     };
     //_________________________________________________________ END CheckRecordAndPlay
@@ -120,6 +108,18 @@ $(function() {
         removeDuplicates(track2);
         removeDuplicates(track3);
         removeDuplicates(track4);
+
+        track1.push(track1Que[0]);
+        track1Que[0] = undefined;
+
+        track2.push(track2Que[0]);
+        track2Que[0] = undefined;
+
+        track3.push(track3Que[0]);
+        track3Que[0] = undefined;
+
+        track4.push(track4Que[0]);
+        track4Que[0] = undefined;
 
         /* var osc = audioContext.createOscillator(); // Oscillator 
         osc.connect(audioContext.destination)
