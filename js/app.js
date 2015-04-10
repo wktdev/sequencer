@@ -1,4 +1,5 @@
 $(function() {
+    "use strict"
 
     //_________________________________________________________General variable declarations
     var isPlaying = false,
@@ -28,12 +29,11 @@ $(function() {
     //_________________________________________________________END Track que arrays
 
 
-
     //_________________________________________________________Track arrays
-    var track1 = [1, 3],
-        track2 = [5, 13],
-        track3 = [1],
-        track4 = [1, 3, 5, 7, 9, 11, 13, 15];
+    var track1 = [],
+        track2 = [],
+        track3 = [],
+        track4 = [];
 
     //_________________________________________________________END Track arrays
 
@@ -59,7 +59,7 @@ $(function() {
 
     function setDemoDivColors(domElementGridNote, arr) {
 
-        for (i = 0; i < arr.length; i += 1) {
+        for (var i = 0; i < arr.length; i += 1) {
             $(domElementGridNote + arr[i]).css("background-color", "yellow");
 
         }
@@ -78,7 +78,7 @@ $(function() {
 
     function checkIfRecordedAndPlay(trackArray, sndToPlay, gridBeat, timeVal) {
 
-        for (i = 0; i < trackArray.length; i += 1) {
+        for (var i = 0; i < trackArray.length; i += 1) {
 
             if (gridBeat === trackArray[i]) {
                 sndToPlay.play(timeVal)
@@ -86,19 +86,10 @@ $(function() {
             }
         }
 
-        console.log(track1Que)
 
-        track1.push(track1Que[0])
-        track1Que[0] = undefined
 
-        track2.push(track2Que[0])
-        track2Que[0] = undefined
 
-        track3.push(track3Que[0])
-        track3Que[0] = undefined
 
-        track4.push(track4Que[0])
-        track4Que[0] = undefined
 
     };
     //_________________________________________________________ END CheckRecordAndPlay
@@ -109,6 +100,8 @@ $(function() {
         $("#metro-ui-" + (beatDivisionNumber)).effect("pulsate", {
             times: 1
         }, 10);
+
+
 
         checkIfRecordedAndPlay(track1, kick, beatDivisionNumber, time);
         checkIfRecordedAndPlay(track2, snare, beatDivisionNumber, time);
@@ -121,10 +114,22 @@ $(function() {
         removeDuplicates(track3);
         removeDuplicates(track4);
 
-        /* var osc = audioContext.createOscillator(); // Oscillator 
-        osc.connect(audioContext.destination)
-        osc.start(time)
-        osc.stop(time + 0.1)*/
+        track1.push(track1Que[0]);
+        track1Que[0] = undefined;
+
+        track2.push(track2Que[0]);
+        track2Que[0] = undefined;
+
+        track3.push(track3Que[0]);
+        track3Que[0] = undefined;
+
+        track4.push(track4Que[0]);
+        track4Que[0] = undefined;
+
+        // var osc = audioContext.createOscillator(); // Oscillator 
+        // osc.connect(audioContext.destination)
+        // osc.start(time)
+        // osc.stop(time + 0.1)
 
     }
 
@@ -222,9 +227,9 @@ $(function() {
 
     function removeDuplicates(arr) {
 
-        for (i = 0; i < arr.length - 1; i += 1) {
+        for (var i = 0; i < arr.length - 1; i += 1) {
 
-            for (j = i + 1; j < arr.length; j += 1)
+            for (var j = i + 1; j < arr.length; j += 1)
 
                 if (arr[i] === arr[j]) {
                 arr.splice(i, 1);
